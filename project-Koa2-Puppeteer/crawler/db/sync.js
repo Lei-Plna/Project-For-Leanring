@@ -1,8 +1,9 @@
 /**
  *  Syncs the database with the models.
  */
-const seq = require('./connection/mysql'),
-  models = require('./models');
+const seq = require('./connection/mysql');
+
+require('./models');
 
 seq.authenticate().then(() => {
   console.log('connection');

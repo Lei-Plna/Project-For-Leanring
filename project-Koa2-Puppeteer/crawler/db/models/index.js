@@ -3,8 +3,11 @@
  */
 
 const Slider = require('./slider');
-
+const AgencyInfo = require('./agencyInfo');
+const RecommendCourse = require('./recommendCourse');
 
 module.exports = {
-  Slider
+  Slider,
+  AgencyInfo,
+  RecommendCourse
 };

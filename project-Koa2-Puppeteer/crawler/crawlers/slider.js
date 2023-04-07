@@ -1,8 +1,8 @@
 const crawler = require('../libs/crawler'),
-  { crawler } = require('../config/index');
+  { crawler: crawlerConfig } = require('../config/index');
 
 crawler({
-  url: crawler.url.main,
+  url: crawlerConfig.url.main,
   callback() {
     const result = [];
     const $items = document.querySelectorAll('.swiper-wrapper .w-banner-item');
